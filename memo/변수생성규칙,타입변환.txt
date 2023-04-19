@@ -1,0 +1,20 @@
+
+변수만들때 룰
+1.첫번째 글자는 문자or $,_ 이어야 하고 숫자로 시작하면 안됨
+2.대소문자 구분
+3.첫번째 문자의 첫문자는 소문자로 시작 단어 결합시 두번째 단어의 첫글자 대문자
+ex) userName
+4.문자수 제한은 없음
+5.자바 예약어(int, if, true .... )는 사용 불가
+
+타입변환
+1.자동타입변환 promotion
+2.강제타입변환 casting
+3.문자열을 기본타입으로 변환
+int num = Integer.parseInt("3000");
+byte num2 = Byte.parseByte("20");
+double num3 = Double.parseDouble("1.123");
+boolean val1 = Boolean.parseBoolean("true");
+4.기본타입을 문자열로 변환
+4-1.String.valueOf(20)
+4-2.num2 + "" (기본타입과 문자열을 결합)
