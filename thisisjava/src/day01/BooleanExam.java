@@ -8,6 +8,7 @@ public class BooleanExam {
 
 		System.out.println(stop);
 		System.out.println(start);
+		
 	}
 
 }
