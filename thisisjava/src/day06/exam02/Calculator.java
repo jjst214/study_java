@@ -1,7 +1,7 @@
 package day06.exam02;
 
 public class Calculator {
-	//필드 - 데이터 저장
+		//필드 - 데이터 저장
 		//생성자 - 필드의 초기화
 		//메소드 - 객체의 동작에 해당하는 코드블럭
 		void powerOn() {
