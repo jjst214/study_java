@@ -13,6 +13,7 @@ public class Car {
 		public Car() {      // 1번 생성자
 
 		}
+		Car my = new Car("ddd");
 		public Car(String model) {      //2번 생성자
 			this(model,"흰색");  // 3번 생성자 호출
 		}

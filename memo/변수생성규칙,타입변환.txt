@@ -7,6 +7,10 @@ ex) userName
 4.문자수 제한은 없음
 5.자바 예약어(int, if, true .... )는 사용 불가
 
+*상수(static final 변수) 만들때는 대문자만 사용
+*패키지명은 소문자만 사용
+
+
 타입변환
 1.자동타입변환 promotion
 2.강제타입변환 casting
