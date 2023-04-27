@@ -1,0 +1,22 @@
+메소드, 클래스 오버로드 ->클래스, 메소드 이름은 같은데 받는 매개변수의 타입이나 갯수가
+다를때 상황에 맞는 클래스,메소드가 실행되게 하고싶을때 사용
+ex) int plus(int x, int y) { return x+y; }   /   int plus(int x, int y, int z) { return int x+y+z; }
+
+
+메소드 재정의 - 오버라이딩(부모 클래스에서 만든 메소드를 자식클래스에서 재정의 할때)
+동물 클래스의 울음소리()를
+자식클래스인 고양이 클래스에선 울음소리()가 '야옹',
+강아지 클래스에선 울음소리()가 '멍멍' 으로 나오게 하고싶을때 사용.
+
+ex)
+class Animal{
+	public void sound(){
+		sysout("소리를 냅니다.");
+	}
+}
+
+class Cat extends Animal{
+	public void sound(){  <<메소드 오버라이딩
+		sysout("야옹");
+	}
+}
