@@ -1,22 +1,21 @@
 package day06.exam01;
 
 public class Car {
-	//필드선언
-<<<<<<< HEAD
-	public String company = "현대자동차";
+	//�븘�뱶�꽑�뼵
+	public String company = "�쁽���옄�룞李�";
 	public String model;
 	public String color;
 	public int maxSpeed;
 	
-//	생성자 선언 기본 생성자
-//	생성자 오버로딩 : 매개 변수의 타입, 개수, 순서가 다른 생성자를 여러개 작성
-//	목적 : 객체의 필드를 다양하게 초기화 할 수 있음
-	public Car() {	// 1번 생성자
+//	�깮�꽦�옄 �꽑�뼵 湲곕낯 �깮�꽦�옄
+//	�깮�꽦�옄 �삤踰꾨줈�뵫 : 留ㅺ컻 蹂��닔�쓽 ���엯, 媛쒖닔, �닚�꽌媛� �떎瑜� �깮�꽦�옄瑜� �뿬�윭媛� �옉�꽦
+//	紐⑹쟻 : 媛앹껜�쓽 �븘�뱶瑜� �떎�뼇�븯寃� 珥덇린�솕 �븷 �닔 �엳�쓬
+	public Car() {	// 1踰� �깮�꽦�옄
 		
 	}
 	
 	public Car(String model) {
-		this(model, "흰색");
+		this(model, "�씛�깋");
 	}
 	
 	public Car(String model, String color) {
@@ -28,30 +27,27 @@ public class Car {
 		this.color = color;
 		this.maxSpeed = maxSpeed;
 	}
-=======
-		public String company = "현대자동차";
+		public String company = "�쁽���옄�룞李�";
 		public String model;
 		public String color;
 		public int maxspeed;
 
-		//생성자 선언 기본 생성자
-		//생성자 오버로딩 : 매개 변수의 타입, 개수, 순서가 다른 생성자를 여러개 작성
-		//목적 : 객체의 필드를 다양하게 초기화 할수있음
-		public Car() {      // 1번 생성자
+		//�깮�꽦�옄 �꽑�뼵 湲곕낯 �깮�꽦�옄
+		//�깮�꽦�옄 �삤踰꾨줈�뵫 : 留ㅺ컻 蹂��닔�쓽 ���엯, 媛쒖닔, �닚�꽌媛� �떎瑜� �깮�꽦�옄瑜� �뿬�윭媛� �옉�꽦
+		//紐⑹쟻 : 媛앹껜�쓽 �븘�뱶瑜� �떎�뼇�븯寃� 珥덇린�솕 �븷�닔�엳�쓬
+		public Car() {      // 1踰� �깮�꽦�옄
 
 		}
 		Car my = new Car("ddd");
-		public Car(String model) {      //2번 생성자
-			this(model,"흰색");  // 3번 생성자 호출
+		public Car(String model) {      //2踰� �깮�꽦�옄
+			this(model,"�씛�깋");  // 3踰� �깮�꽦�옄 �샇異�
 		}
-		public Car(String model, String color) { //3번 생성자
-			this(model,color,200); //4번 생성자 호출
+		public Car(String model, String color) { //3踰� �깮�꽦�옄
+			this(model,color,200); //4踰� �깮�꽦�옄 �샇異�
 		}
-		//생성자 선언
+		//�깮�꽦�옄 �꽑�뼵
 		public Car(String model, String color, int maxspeed) {
 			this.model = model;
 			this.color = color;
 			this.maxspeed = maxspeed;
 		}
->>>>>>> branch 'main' of https://github.com/jjst214/study_java.git
-}
