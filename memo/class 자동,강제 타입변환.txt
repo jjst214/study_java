@@ -1,0 +1,22 @@
+1.class의 자동타입변환
+클래스 자동 타입변환 부모 클래스가 자식클래스의 객체를 생성자로 사용가능
+
+방법1) Flower a = new Rose();
+
+방법2)     Rose rose = new Rose();
+	Flower a = rose;
+
+결과=> a객체는 Rose 클래스로 만들었지만
+부모(Flower)에게 없는 필드나 메소드는 사용 할 수 없고
+차이점은 a는 Rose 에서 오버라이딩 된 메소드를 사용 가능함.
+
+2.class의 강제타입변환
+위와 반대로 부모 타입의 객체를 자식 타입으로 변경하고 싶을 때
+조건***)자동 타입변환된 객체만 강제 타입변환이 가능함!!
+
+ex) Flower a = new Rose();  << 1.자동타입변환 객체 a 선언
+    Rose rose = (Rose) a;    << 2.Rose객체를 Flower타입으로 만든
+			 a객체를 다시 자식타입(Rose)로 rose에 담음
+
+
+3.객체 타입확인 instanceof
