@@ -1,26 +1,7 @@
 package day06.exam02;
 
 public class Calculator {
-<<<<<<< HEAD
-	void powerOn() {
-		System.out.println("�쟾�썝�쓣 耳��땲�떎.");
-	}
-	
-	int plus(int x, int y) {
-		powerOn();
-		int result = x + y;
-		return result;
-	}
-	
-	double divide(int x, int y) {
-		double result = (double) x / y;
-		return result;
-	}
-	
-	void powerOff() {
-		System.out.println("�쟾�썝�쓣 �걬�땲�떎.");
-	}
-=======
+
 		//필드 - 데이터 저장
 		//생성자 - 필드의 초기화
 		//메소드 - 객체의 동작에 해당하는 코드블럭
@@ -39,5 +20,4 @@ public class Calculator {
 		void powerOff() {
 			System.out.println("전원을 끕니다");
 		}
->>>>>>> branch 'main' of https://github.com/jjst214/study_java.git
 }
