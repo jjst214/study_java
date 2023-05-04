@@ -1,0 +1,14 @@
+포장객체 (기본타입)
+int Integer
+char Character
+float Float
+double Double
+...
+
+Integer obj = 100; //박싱
+int value = obj; //언박싱
+
+int result = obj + 10 //언박싱 후 연산
+
+비교 연산자 : 내부의 값을 비교하는게 아니라 포장 객체의 번지를 비교
+int a = 10;

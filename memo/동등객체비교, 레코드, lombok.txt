@@ -1,0 +1,30 @@
+객체동등비교
+java는 두 객체가 동등한지 비교할때
+hashCode()와 equals() 메소드를 사용함
+보통 처음 hashCode()로 객체의 주소값을 비교한다음 equals로 2차 검증까지 한 뒤
+둘 다 true가 나오면 동등객체로 본다.
+hashCode는 각각 다른 객체(*다른 클래스가 아니라 같은 클래스를 new로 2개 생성)
+여도 안의 값이 똑같으면 같은 hashcode를 가지기 때문이다.
+
+레코드 선언
+DTO(Data Transfer Object)
+데이터를 전달하는 객체
+
+레코드를 사용하면>>
+변수의 타입과 이름을 이용해서 private final 필드 자동생성
+생성자, getter메소드 자동추가
+hashCode, equals, toString 메소드 재정의한 코드 자동추가
+
+사용(클래스 만들때 record 기입)>>
+public record Member(String id, String name, int no){
+
+}
+
+***더욱 편리한 외부 라이브러리 lombok 쓰자
+https://projectlombok.org/download
+cmd관리자
+java -jar 롬복.jar 이클립스exe 에 설치
+src폴더 있는곳에 lib폴더 만들고 그 안에 롬복.jar 옮기기
+롬복.jar 우클릭- 빌드패스 - add
+프로젝트 module-info.java가서 requires lombok;
+모듈패스 확인
