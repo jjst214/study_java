@@ -20,3 +20,21 @@ str.contains("이") >> false
 6.split("구분문자") 문자열을 배열로 변경해줌
 String fruits = "사과, 바나나, 딸기";
 String[] names2 = names.split(",")
+
+---------------------------------------------------
+
+StringBuilder 클래스
+내부버퍼가 있음(데이터를 저장하는 메모리)
+문자열을 저장해두고 그안에서 추가, 수정, 삭제작업이 가능
+
+append() 문자열 끝에 추가
+insert(인덱스, 기본값|문자열) 문자열을 지정위치에 추가
+delete(시작인덱스, 끝인덱스) 문자열 일부를 삭제
+replace(시작인덱스, 끝인덱스, 문자열) 문자열 일부를 대체
+toString() 완성된 문자열 리턴
+
+*String to byteArray
+byte[] bytearr = str.getBytes()
+
+*byteArray to String
+String str2 = new String(bytearr)
