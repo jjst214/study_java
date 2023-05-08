@@ -1,0 +1,30 @@
+System 클래스의 메소드
+필드 out, err, in << System.out.print System.err.print 같은거
+
+프로세스 종료 exit()
+현재 시간을 밀리초 단위 long 타입 반환 (1970년1월1일기준) currentTimeMillis()
+현재시간을 나노초 단위 long 타입 반환 nanoTime()
+운영체제와 사용자 정보를 제공 getProperty()
+운영체제의 환경변수 정보제공 getenv()
+
+
+Math 클래스의 메소드
+
+절대값 Math.abs()
+
+올림 Math.ceil()
+
+버림 Math.floor()
+
+반올림 Math.round()
+>>float타입을 넣으면 int타입 반환, double타입을 넣으면 long 반환
+
+랜덤 Math.random() or Random객체
+>>(int)((Math.random()*5)+1 //1~5까지 랜덤 or
+Random random = new Random(n);  //n=종자값 같은 랜덤번호를 출력하고싶을때
+사용하고 계속 랜덤값만 출력하고 싶으면 비워두면 됨
+random.nextInt(5)+1 // 1~5까지 랜덤
+
+최대값 Math.max()
+
+최소값 Math.min()

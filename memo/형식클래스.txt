@@ -1,0 +1,14 @@
+SimpleDateFormat : 날짜를 형식화된 문자로 반환
+y M d E a H m s 연 월 일 요일 오전/오후 시간 분 초
+
+DecimalFormat : 숫자를 형식화된 문자로 반환
+
+DecimalFormat
+0 : 10진수(빈자리는 0으로 채움)
+# : 10진수(빈자리를 채우지 않음)
+.소수점
+,단위구분
+%
+\u00A4 통화기호(원\)
+DecimalFormat df = new DecimalFormat("00000.00000")
+df.format(123.789) --> 문자열 "00123.78900" 반환
