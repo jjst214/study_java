@@ -1,0 +1,31 @@
+어노테이션 @
+클래스나 인터페이스를 컴파일 하거나 실행할 때 어떻게 처리하는지
+알려주는 설정정보
+
+1)컴파일 시 사용하는 정보전달 ex> @Override
+2)빌드 툴이 코드를 자동으로 생성할 때 정보전달 ex> lombok @Data
+3)실행 시 특정 기능을 처리할 때 사용되는 정보전달
+
+-정의하기
+@target({ElementType.TYPE, ElementType.FIELD, ElementType.METHOD})
+public @interface AnnotationName{
+	//속성은 타입, 이름으로 구성
+	String value(); //value는 기본속성
+	String prop1(); //이름에는 괄호를 달아줘야함.
+	int prop2() default 1;
+}	
+-사용하기
+@AnnotationName("*");
+@AnnotationName(value = "*", prop1 = "안녕", prop2 = 20);
+@AnnotationName(prop1 = "안녕");
+@AnnotationName(prop1 = "안녕", prop2 = 20);
+
+어노테이션 적용 대상
+
+어노테이션 유지 정책
+SOURCE   컴파일할때 적용		컴파일된 후에 제거
+CLASS     메모리로 로딩할때 적용	메모리로 로딩된후에 제거
+RUNTIME 실행할때 적용		계속 유지됨
+
+어노테이션 설정 정보 받기
+Annotation[] getDeclaredAnnotations()  적용된 어노테이션을 배열타입 리턴
