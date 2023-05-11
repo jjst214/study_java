@@ -14,13 +14,16 @@ str.substring(0,2) >> "김그" 0번째부터 2번째 전까지의 문자열 추출
 5-1.indexOf("문자열") 문자열에서 해당 문자의 인덱스 반환(문자가 없으면 -1 반환)
 str.indexOf("린") >> 2
 
-5-2.contains("문자열") 해당 문자열이 있으면 true, 없으면 false 반환
+5-2.lastIndexOf("문자열") 문자열의 끝에서부터 해당 문자의 인덱스 반환
+
+5-3.contains("문자열") 해당 문자열이 있으면 true, 없으면 false 반환
 str.contains("이") >> false
 
 6.split("구분문자") 문자열을 배열로 변경해줌
 String fruits = "사과, 바나나, 딸기";
 String[] names2 = names.split(",")
 
+7.startsWith("문자열"), endsWith("문자열") 값의 문자열로 시작or끝나는지 체크
 ---------------------------------------------------
 
 StringBuilder 클래스

@@ -1,0 +1,26 @@
+
+get(index) 해당 인덱스 객체 반환
+contains(E) 주어진 객체가 있는지 반환(true,false)
+remove(E) 해당 객체 제거
+remove(index) 해당 인덱스의 객체 제거
+clear() 객체 전부 제거(비우기)
+isEmpty() 객체가 전부 비어있는지 true false 반환
+
+
+
+Set - 순서x(인덱스가 없다는 뜻) 중복값x
+HashSet의 반복 출력
+1)향상된 for 문
+for(E e: set){
+}
+
+2)Set컬렉션의 iterator() 메소드 --> 반복자
+Set<E> set = new HashSet<E>();
+iterator<E> iterator = set.iterator();
+>>while()문의 조건에 iterator의 hasNext()를 조건으로 주면 Set컬렉션 안에
+값이 한개라도 남아있으면 true가 반환되기 때문에 반복가능
+
+iterator의 메소드
+1.hasNext() 가져올 객체가 있으면 true 없으면 false
+2.next() 컬렉션에서 하나의 객체를 가지고온다.
+3.remove() next()로 가지고온 객체를 Set컬렉션에서 제거
