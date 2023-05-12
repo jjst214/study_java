@@ -1,0 +1,25 @@
+Comparable, Comparator
+
+TreeSet, TreeMap은 저장과 동시에 오름차순 정렬이 됨
+정렬이 되려면 객체가 Comparable 인터페이스를 구현해놓아야 가능함
+
+if 클래스를 이미 다 구현해놨는데 TreeSet TreeMap에 넣어야 할 때
+->Comparator 인터페이스 구현 객체를 전달
+				     (비교자 인터페이스 구현객체)
+TreeSet<Person> treeset = new TreeSet<>(PersonComparator);
+
+
+public class PersonComparator implements Comparator<Person>{
+
+	@Override
+	public int compare(Person o1, Person o2) {
+		if(o1.age < o2.age) {
+			return -1;
+		}else if(o1.age == o2.age) {
+			return 0;
+		}else {
+			return 1;
+		}
+	}
+	
+}
