@@ -19,7 +19,7 @@ str.indexOf("린") >> 2
 5-3.contains("문자열") 해당 문자열이 있으면 true, 없으면 false 반환
 str.contains("이") >> false
 
-6.split("구분문자") 문자열을 배열로 변경해줌
+6.split("구분문자", ) 문자열을 배열로 변경해줌
 String fruits = "사과, 바나나, 딸기";
 String[] names2 = names.split(",")
 

@@ -3,7 +3,7 @@ Comparable, Comparator
 TreeSet, TreeMap은 저장과 동시에 오름차순 정렬이 됨
 정렬이 되려면 객체가 Comparable 인터페이스를 구현해놓아야 가능함
 
-if 클래스를 이미 다 구현해놨는데 TreeSet TreeMap에 넣어야 할 때
+if 클래스를 이미 다 구현해놨는데 TreeSet TreeMap에 넣어야 할 때(Comparable 인터페이스를 안만들었을때)
 ->Comparator 인터페이스 구현 객체를 전달
 				     (비교자 인터페이스 구현객체)
 TreeSet<Person> treeset = new TreeSet<>(PersonComparator);
@@ -23,3 +23,24 @@ public class PersonComparator implements Comparator<Person>{
 	}
 	
 }
+
+2)메소드
+first() 가장 낮은 객체 리턴
+last() 가장 높은 객체리턴
+lower(E e) 주어진 객체 바로 아래 객체 리턴
+higher(E e) 주어진 객체 바로 위 객체 리턴
+pollFirst() 제일 낮은 객체를 꺼내오고 컬렉션에서 제거
+pollLast() 제일 높은 객체를 꺼내오고 컬렉션에서 제거
+NavigableSet<E> headSet(E, boolean) 주어진 객체보다 낮은 객체를 리턴
+NavigableSet<E> tailSet(E, boolean) 주어진 객체보다 높은 객체를 리턴
+NavigableSet<E> subSet(E, boolean, E, boolean)
+시작과 끝에 주어진 객체사이의 객체들을 리턴
+
+ex)		
+//미만 false, 이하 true
+1.NavigableSet<Integer> rangeSet = treeSet.headSet(30, false);
+>>30미만의 값 출력
+2.NavigableSet<Integer> rangeSet2 = treeSet.tailSet(36, false);
+>>36초과의 값 출력
+3.NavigableSet<Integer> rangeSet3 = treeSet.subSet(20, false, 50, false);
+>>20초과 50미만 값 출력
